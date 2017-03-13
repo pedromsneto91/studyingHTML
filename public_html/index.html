@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<!-- comentários serão feitos assim -->
+<html set lang="pt-br"><!-- lang pt-br é para o navegador reconhecer a linguagem-->
+    <head><!--cabeçalho--> <!--Configurações comportamentais-->
+        <title>Estudando HTML</title>
+        <meta charset="UTF-8"/> <!--essa tag diz que o conjunto de caracteres(charset) é o latino(UTF-8)--><!--TAGS META NÃO CONTÊM FECHAMENTO-->
+        <!--uso da barra (/) para o padrão XHTML-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href = "estilo.css" type = "text/css" rel = "stylesheet">
+        <style> /*style: CSS =  parte visual*/
+            h3{
+                color: pink;/*determina cor rosa para toda a hierarquia h3*/
+            }
+        </style><!--a tag style, em head, diz que vai acontecer uma formatação de tudo o que estiver dentro de style no browser-->
+    </head>
+    <body> <!--body = corpo-->
+        <header><!--cabeçalho-->
+            <hgroup><!--incorpora grupos de h's-->
+                <h1 style = "color:blue; font-family: comic sans ms" title = "ei, este é um título!">Cabeçalho 1</h1><!--hierarquia de título 1-->
+                                                                                                            <!--hierarquia maior em relação à 2,3,4,5 ou 6-->
+                <h2 style="color: brown; font-family: verdana; text-align: center"> Cabeçalho 2 no centro da página</h2>
+            </hgroup>
+        </header>
+        <p>Este é um parágrafo normal</p>
+        <hr title="linha"> <!-- uso de uma linha -->
+        <p style= "font-size: x-large; color: green"> Este é outro parágrafo</p>
+        <br> <!-- quebra de linha -->
+        <p style = "font-family: times new roman"> Este é outro parágrafo, mas separado por uma quebra de linha e na fonte &quot;Times New Roman&quot;</p>
+        <h1 title="Negrito"><b> Outro Cabeçalho</b></h1>
+        <p><i> Dá para ver claramente que este parágrafo está em itálico.</i></p>
+        <p>Temos também palavras <sub>subescritas</sub> e <sup>superescritas</sup>.</p>
+        <p>Olha, esta é uma informação <strong title="não é em negrito">importante</strong>.</p>
+        <p>Esta aqui está <mark>marcada</mark>.</p>
+        <p>Já esta está <em title="não é em itálico">em enfase</em></p>
+        <p><small>Frase com tamanho menor</small></p>
+        <p>Este aqui está <s>linhado</s>.</p>
+        <p>Neste aqui, a linha está <ins>debaixo</ins></p>
+        <p>Se eu não quiser mais, uso <del>isto</del>.</p>
+        <p>Pode ver que há dois&nbsp;&nbsp;espaços&nbsp;&nbsp;entre a palavra <q>espaços</q></p>
+        <h3>Alguns Simbolos</h3>
+        <p> utilizando o <q><em>&</em></q>, pode-se colocar vários símbolos, como o <strong style="color:red">&lt;</strong> <!--&lt: less than(menor que)-->
+            ou o <strong style="color:red">&gt;</strong></p><!--&gt: greater than(maior que)-->
+                                                            <!--em: ênfase(fica em itálico, mas não é itálico)-->
+                                                            <!--q: quotes(áspas duplas)-->
+        <h4> Outros símbolos especiais</h4>
+        <p> &larr; &rarr; &uarr; <br/>
+            &Delta; &Lambda; &Omega; &Phi; <br/>
+            &permil; &sum; &infin; &times; &radic; &plusmn; &oplus; &ne; <br/>
+            &copy; &reg; &trade; <br/>
+            &pound; &yen; &euro; <br/>
+            &lt; &gt; &le; &ge;
+        </p>
+        <p>exemplo de código:</p>
+        <pre>
+            <code>
+public static void main(String[] args){
+    System.out.println("Olá Mundo!");
+}
+            </code>
+        </pre>
+        
+        <p>Se uma palavra for muito grande, por exemplo, paralelepípedo, e estiver na margem direita da janela, ao redimensioná-la, o restante da palavra
+            pode ficar na outra linha, por exemplo, para&shy;lele&shy;pípe&shy;do, contendo, assim, um hífen na linha anterior</p>
+        
+        <p>Posso fazer com que um texto muito grande seja alinhado à esquerda, à direita, ao centro ou mesmo justificado, melhorando a interface do seu site. É
+            só aplicar na &quot;style&quot; o seguinte comando <code>text-align : justify;</code>, por exemplo.</p>
+        
+        <p>Se já existe uma tag style na tag head, há uma forma de sobrescrever as edições, usando a tag &quot;span&quot; da seguinte forma: <code>&lt;span&gt;                 qualquer edição &lt;/span&gt;</code></p>
+        
+        <p>Pode-se usar &lt;wbr/&gt; para separar uma palavra hifenizada no final de uma linha para o começo de outra, por exemplo, super<wbr/>-humano</p>
+        
+        <p style="color: rgb(250,0,0)">Pode-se usar <code>color: rgb( , , );</code> dentro de style para dar cor a algum texto</p>
+        <p style="color: rgba(0,250,0,0.4)">Pode-se, ainda, usar <code>color:rgba( , , , )</code> para dar transparência ao texto (o último item vai de 0 a 1 em termos             de transparente a opaco. Veja a diferença em relação a <span style="color:rgb(0,250,0)">este texto</span></p>
+        <p><span style="background-image: url(wood-263802_960_720.jpg)">aqui tem um fundo que se enquadra no texto. Quanto maior for o texto, dependendo da resolução
+            da imagem de fundo, mais visível é o fundo.</span></p>
+            
+        <p style="background-color: lightgrey"> Pode-se notar que, nessa linha, há um fundo colorido</p>
+        
+        <p><span style="color:hsl(80,38%,60%)">Pode-se trocar a cor usando, de outra forma, o estilo <code>color:hsl( , %, %)</code> , bem como deixando transparente
+                ou não, utilizando <code>color:hsla( , %, %, )</code>, assim: <span style="color:hsla(80, 38%, 60%, 0.4)">dessa forma</span></span></p>
+        
+        <p>Abaixo, você verá um fundo:</p>
+        <img src="wood-263802_960_720.jpg"/>
+        <p>Mas esse fundo é muito grande, ou a resolução dele é muito alta, o que pode ser resultado de um arquivo muito grande</p>
+        <p>Posso diminuir esse fundo assim: <img src="wood-263802_960_720.jpg" width="400"/>, mas a resolução e o tamanho do arquivo continuam sendo os mesmos</p>
+        <p>Esta imagem está em uma resolução menor: <img src="wood-263802_960_720-menor.jpg"/>, mas no mesmo tamanho da de cima porque foi editada em algum editor
+        de imagem. Vale lembrar que, ao editar, perdeu-se um pouco da qualidade da imagem.</p>
+    </body>
+</html>
