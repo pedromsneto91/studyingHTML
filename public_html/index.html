@@ -81,7 +81,12 @@ public static void main(String[] args){
                 ou não, utilizando <code>color:hsla( , %, %, )</code>, assim: <span style="color:hsla(80, 38%, 60%, 0.4)">dessa forma</span></span></p>
         
         <p>Abaixo, você verá um fundo:</p>
-        <img src="wood-263802_960_720.jpg"/>
+        <figure class="madeira"> <!--semântico; identificação de imagens(lengenda); facilita a busca da imagem pelo usuário-->
+            <img src="wood-263802_960_720.jpg"/>
+            <figcaption> <!--Legenda para a imagem-->
+                <p>Madeira</p>
+            </figcaption>
+        </figure>
         <p>Mas esse fundo é muito grande, ou a resolução dele é muito alta, o que pode ser resultado de um arquivo muito grande</p>
         <p>Posso diminuir esse fundo assim: <img src="wood-263802_960_720.jpg" width="400"/>, mas a resolução e o tamanho do arquivo continuam sendo os mesmos</p>
         <p>Esta imagem está em uma resolução menor: <img src="wood-263802_960_720-menor.jpg"/>, mas no mesmo tamanho da de cima porque foi editada em algum editor

@@ -8,4 +8,30 @@ and open the template in the editor.
     Author     : Pedro Moreira
 */
 
+figure.madeira{
+    position: relative;
+    border: 8px solid white; /*parametros: preenchimento forte/fraco cor*/
+    box-shadow: 1px 1px 4px black; /*parametros: tamanhoHorizontal tamanhoVertical sombreamentoTotal corSombreamento*/
+}
 
+figure.madeira img{
+    width: 100%;
+    height: 100%;
+}
+
+figure.madeira figcaption{
+    opacity: 0;/*opacidade 0 = sem opacidade*/
+    position: absolute;
+    top: 0px; /*posição dos elementos*/
+    background-color: rgba(0,0,0,.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;/*recuo em relação às bordas*/
+    box-sizing: border-box; /*tamanho da caixa : fica em relação à borda*/
+    transition: .5s; /*demora de 0.5s para transitar*/
+}
+
+figure.madeira figcaption:hover{
+    opacity: 1;
+}
